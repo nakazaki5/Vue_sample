@@ -1,22 +1,9 @@
 <template>
-  <button @click="increment">Up vote</button>
+  <countUp />
 </template>
 
-<script>
-
-export default {
-  name: "App",
-  data() {
-    return { count: 1 }
-  },
-  methods: {
-    increment() {
-      this.count++
-      console.log(this.count)
-    },
-  },
-}
-
+<script setup>
+import countUp from "./components/CountUp.vue"
 </script>
 
 <style>
