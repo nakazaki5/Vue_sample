@@ -20,7 +20,6 @@ export default {
   },
   computed: {
     publishedBooksMessage() {
-      // `this` は vm インスタンスを指す
       return this.author.bookName.length
     },
   },

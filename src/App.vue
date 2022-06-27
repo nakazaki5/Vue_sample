@@ -3,7 +3,6 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: "App",
@@ -12,12 +11,12 @@ export default {
   },
   methods: {
     increment() {
-      // `this` はコンポーネントインスタンスを参照
       this.count++
       console.log(this.count)
     },
   },
 }
+
 </script>
 
 <style>

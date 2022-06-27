@@ -5,7 +5,6 @@
 <script setup>
 const vMyDirective = {
   beforeMount: (el) => {
-    // 要素でなにかをします
     el.style.backgroundColor = "red"
   },
 }

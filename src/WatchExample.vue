@@ -18,7 +18,6 @@ export default {
     }
   },
   watch: {
-    // question が変わるたびに、この関数が実行される
     question(newQuestion) {
       if (newQuestion.indexOf("?") > -1) {
         this.getAnswer()
@@ -36,6 +35,7 @@ export default {
         .catch((error) => {
           this.answer = "Error! Could not reach the API. " + error
         })
+
     },
   },
 }
