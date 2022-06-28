@@ -1,42 +1,42 @@
 body {
-  background-color: #f3e8c1;
   text-align: center;
+  background-color: #f3e8c1;
 }
 
 .title {
-  margin: 0.5em auto;
-  padding: 10px;
   width: 85%;
-  color: #282424;
-  border-radius: 10px;
+  padding: 10px;
+  margin: 0.5em auto;
   font-size: 100px;
   font-style: oblique;
-  text-shadow: 2px 2px #fff, 5px 5px rgba(0, 188, 212, 0.4);
+  color: #282424;
+  text-shadow: 2px 2px #fff, 5px 5px rgb(0 188 212 / 40%);
+  border-radius: 10px;
 }
 
 
 .count {
-  background-color: #6ae6cf;
   padding: 0.2em 0.8em;
-  text-align: center;
-  text-shadow: 2px 2px #fff, 5px 5px rgba(212, 170, 0, 0.4);
-  font-weight: 50;
-  font-size: 45px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 50;
   color: #050404;
+  text-align: center;
+  text-shadow: 2px 2px #fff, 5px 5px rgb(212 170 0 / 40%);
+  background-color: #6ae6cf;
   border: 3px solid #1b2538;
   border-radius: 30px;
 }
 
 .count-down {
-  background-color: #6ae6cf;
   padding: 0.2em 0.8em;
-  text-align: center;
-  text-shadow: 2px 2px #fff, 5px 5px rgba(212, 170, 0, 0.4);
-  font-weight: 50;
-  font-size: 45px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 50;
   color: #1929d7;
+  text-align: center;
+  text-shadow: 2px 2px #fff, 5px 5px rgb(212 170 0 / 40%);
+  background-color: #6ae6cf;
   border: 3px solid #1b2538;
   border-radius: 30px;
 }
@@ -44,16 +44,16 @@ body {
 .up-button {
   display: inline-block;
   padding: 0.2em 0.5em;
-  color: rgb(255, 255, 255);
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
   margin-left: 25px;
   font-size: 30px;
-  background-color: #6787ee;
-  box-shadow: 0 5px 0 #3f3fcc;
-  border-radius: 60px;
-  cursor: pointer;
+  color: rgb(255 255 255);
   text-decoration: none;
+  cursor: pointer;
+  background-color: #6787ee;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  border-radius: 60px;
+  box-shadow: 0 5px 0 #3f3fcc;
 }
 
 .up-button:active {
@@ -64,16 +64,16 @@ body {
 .down-button {
   display: inline-block;
   padding: 0.1em 0.6em;
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
   margin-right: 25px;
   font-size: 34px;
-  background-color: #e16271;
-  box-shadow: 0 5px 0 #c63243;
-  border-radius: 60px;
-  cursor: pointer;
+  color: #FFF;
   text-decoration: none;
+  cursor: pointer;
+  background-color: #e16271;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  border-radius: 60px;
+  box-shadow: 0 5px 0 #c63243;
 }
 
 .down-button:active {
