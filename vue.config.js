@@ -4,4 +4,11 @@ module.exports = defineConfig({
   devServer: {
     host: "localhost",
   },
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `@import "@/common.scss";`,
+      },
+    },
+  },
 })

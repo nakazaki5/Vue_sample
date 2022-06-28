@@ -1,9 +1,10 @@
 <template>
-  <countUp />
+  <CountUp />
 </template>
 
 <script setup>
-import countUp from "./components/CountUp.vue"
+import CountUp from "./components/CountUp.vue"
+import SpeechRecognition from "./components/freeTextArea.vue"
 </script>
 
 <style>
