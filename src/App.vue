@@ -1,10 +1,10 @@
 <template>
-  <CountUp />
+  <CounterDisplay />
 </template>
 
 <script setup>
-import CountUp from "./components/CountUp.vue"
-import SpeechRecognition from "./components/freeTextArea.vue"
+import CounterDisplay from "./components/CounterDisplay.vue"
+import SpeechRecognition from "./components/SpeechRecognition.vue"
 </script>
 
 <style>
