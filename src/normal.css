@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: rgb(235, 228, 180);
+    background-image: none;
 
 }
 
@@ -8,8 +9,6 @@ h1 {
     margin: 0.5em auto;
     padding: 0px;
     color: #282424;
-    /* background-color: #d5e3ee;
-    border: 10px solid #5850af; */
     border-radius: 10px;
     font-size: 80px;
     font-style: oblique;
@@ -24,8 +23,9 @@ button{
     border-radius: 3px;
     margin-left: 25px;
     font-size: 32px;
+    font-weight: 300;
     background-color: #6787ee;
-    box-shadow: 0 5px 0 #3f3fcc;
+    box-shadow: 0 5px 0 #6969f4;
     border-radius: 60px;
     cursor: pointer;
     text-decoration: none;
