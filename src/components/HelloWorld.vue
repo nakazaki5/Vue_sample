@@ -88,12 +88,16 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
+    msg: {
+      type: String,
+      default: () => {
+        return ""
+      },
+    },
+  },
 }
-
 </script>
 
 <style scoped>
@@ -111,5 +115,4 @@ li {
 a {
   color: #42b983;
 }
-
 </style>

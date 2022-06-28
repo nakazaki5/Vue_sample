@@ -35,7 +35,6 @@ export default {
         .catch((error) => {
           this.answer = "Error! Could not reach the API. " + error
         })
-
     },
   },
 }

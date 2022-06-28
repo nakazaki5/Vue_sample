@@ -1,5 +1,4 @@
 <script>
-
 import { toRefs } from "vue"
 import useUserRepositories from "@/composables/useUserRepositories"
 import useRepositoryNameSearch from "@/composables/useRepositoryNameSearch"
@@ -27,5 +26,4 @@ export default {
     }
   },
 }
-
 </script>
