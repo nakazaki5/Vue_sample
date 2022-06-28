@@ -1,11 +1,11 @@
 <template>
-  <body>
+  <div>
     <h1><p class="title">Counter</p></h1>
     <button class="down-button" @click="countDown">-</button>
     <span class="count">{{ count }}</span>
     <span v-if="seen" class="count-down">{{ count }}</span>
     <button class="up-button" @click="countUp">+</button>
-  </body>
+  </div>
 </template>
 
 <script setup>

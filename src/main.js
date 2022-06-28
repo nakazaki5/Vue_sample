@@ -1,7 +1,6 @@
 import { createApp } from "vue"
 import SetUp from "./App.vue"
-import "./common.css"
-// import "./normal.css"
+import "./assets/style/_index.scss"
 
 const app = createApp(SetUp)
 app.mount("#app")
