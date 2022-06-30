@@ -1,10 +1,13 @@
 <template>
-  <CounterDisplay />
+  <router-view />
 </template>
 
-<script setup>
-import CounterDisplay from "./components/CounterDisplay.vue"
-import SpeechRecognition from "./components/SpeechRecognition.vue"
+<script>
+// import CounterDisplay from "./components/CounterDisplay.vue"
+// import SpeechRecognition from "./components/SpeechRecognition.vue"
+export default {
+  name: "App",
+}
 </script>
 
 <style>
