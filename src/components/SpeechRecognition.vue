@@ -23,16 +23,19 @@
   <div class="pager">
     <ul class="pagination">
       <li class="pre">
-        <a href="http://localhost:8080/"><span>«</span></a>
+        <router-link to="/"><span>«</span></router-link>
       </li>
       <li>
-        <a href="http://localhost:8080/"><span>1</span></a>
+        <router-link to="/"><span>1</span></router-link>
       </li>
       <li>
-        <a href="http://localhost:8080/speech" class="active"><span>2</span></a>
+        <router-link to="/speech"><span>2</span></router-link>
+      </li>
+      <li>
+        <router-link to="/reception"><span>3</span></router-link>
       </li>
       <li class="next">
-        <a href="http://localhost:8080/speech"><span>»</span></a>
+        <router-link to="/reception"><span>»</span></router-link>
       </li>
     </ul>
   </div>
