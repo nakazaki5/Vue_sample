@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 import CounterDisplay from "@/components/CounterDisplay.vue"
 import SpeechRecognition from "@/components/SpeechRecognition.vue"
+import VoiceReception from "@/components/VoiceReception"
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/speech",
     name: "SpeechRecognition",
     component: SpeechRecognition,
+  },
+  {
+    path: "/reception",
+    name: "VoiceReception",
+    component: VoiceReception,
   },
 ]
 
