@@ -1,5 +1,5 @@
 <template>
-  <body class="box">
+  <body class="box" :class="isRedBox ? 'red' : ''">
     <h2>音声受付システム</h2>
     <div class="block">
       <div v-if="page === 1">
@@ -27,7 +27,7 @@
 
       <div v-if="page === 3">
         <div>仲﨑につなぎますか？</div>
-        <p class="sample">
+        <p class="sample" :class="isRedSample ? 'red' : ''">
           <img src="./image.jpeg" alt="新入社員の仲崎につなぎますか？" />
         </p>
         <button class="call-button" @click="search">Call</button>
@@ -63,7 +63,7 @@
     <div class="reception-pager">
       <ul class="reception-page-nation">
         <li class="pre">
-          <router-link to="/"><span>«</span></router-link>
+          <router-link to="/speech"><span>«</span></router-link>
         </li>
         <li>
           <router-link to="/"><span>1</span></router-link>
@@ -90,6 +90,8 @@ const recognition = new webkitSpeechRecognition()
 const page = ref(1)
 const text = ref("")
 const call = ref("")
+const isRedBox = ref(false)
+const isRedSample = ref(false)
 const recognitionText = ref("担当者の呼び出し")
 
 onMounted(() => {
@@ -114,19 +116,21 @@ onMounted(() => {
     var results = event.results
     for (var i = event.resultIndex; i < results.length; i++) {
       text.value = results[i][0].transcript
-      if (usersaid(text, "中崎")) {
+      if (userSaid(text.value, "中崎")) {
         //自分の写真
-        $("#sample").css("background-color", "red")
+        text.value.replace("中﨑", "仲﨑")
+        console.log(text)
+        isRedBox.value = true
       } else {
         //ほかの写真
-        $("#box").css("background-color", "red")
+        isRedSample.value = true
       }
     }
   }
 })
 
 const userSaid = function (text, s) {
-  return text.indexOf(s) > -1
+  return text?.indexOf(s) ?? -1 >= 0
 }
 
 const startSpeech = function voice() {
